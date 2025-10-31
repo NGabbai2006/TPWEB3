@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Titre de la page -->
+	<title>CV</title>
+	<!-- Lien vers le CSS -->
+	<link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+	<div id="cv"> <!-- l'id cv me permet apres de gère cette div en css-->
+		<div id="photo"><!--meme chose mais pour la div photo-->
+			<img id="photo-img" src="Capture d’écran 2025-09-29 114730.png" alt="Photo" /><!--importe une image -->
+		</div>
+
+		<div id="info-list">
+			<!-- Info: date de naissance, adresse, téléphone, email, permis -->
+			<div class="info"><!-- me permet de gérer tout les div qui ont la class info-->
+				<span
+					class="text">21/12/2006</span><!-- plus pratique que le <p> car il prend que l'espece dont il a besoin pour le texte-->
+			</div>
+			<div class="info">
+				<span class="text">34 Rue de Saveuse 80000 Amiens</span>
+			</div>
+			<div class="info">
+				<span class="text">07.69.59.67.21</span>
+			</div>
+			<div class="info">
+				<span class="text">gabbai.noah@gmail.com</span>
+			</div>
+			<div class="info">
+				<span class="text">Titulaire du Permis B Possède un véhicule</span>
+			</div>
+
+			<!-- Info: loisirs, voyages, qualités, compétences -->
+			<div class="info">
+				<div>
+					<strong>Loisirs :</strong>
+					<div>Sport : Badminton<p>Lecture : Manga, webtoon</p>Cuisine</div> <!-- <br> permet de saute de ligne dans ce cas la
+					juste pour utiliser pour l'esthetique -->
+				</div>
+			</div>
+			<div class="info">
+				<div>
+					<strong>Voyage a l'étranger :</strong><!-- permet de mettre le text en gras -->
+					<div>Allemagne, Autriche</div>
+				</div>
+			</div>
+			<div class="info">
+				<div>
+					<strong>Qualités :</strong><!-- permet de mettre le text en gras -->
+					<div>Persévérant, Réfléchi, Assidu</div>
+				</div>
+			</div>
+			<div class="info">
+				<div>
+					<strong>Compétences :</strong> <!-- permet de mettre le text en gras -->
+					<div> Niveau interlédiaire en HTML, CSS etPython<p>Anglais et Allemand</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Section principale du CV -->
+		<div id="main"> <!-- l'id main me permet apres de gèrerr cette div en css-->
+			<div class="langage" >
+			<a href="cveng.html">
+				<button>
+					<img class="drapeau" src="UK.png" alt="English Version"  height="80px", width="100px" />
+				</button>
+				</a>
+			</div>
+			<header>
+				<!-- Nom du candidat -->
+				<h1 id="name">Noah Gabbai</h1>
+			</header>
+
+			<div id="content">
+				<!-- Diplômes et certifications -->
+				<div class="exp">
+					<h2>Diplômes :</h2> <!-- permet de faire un titre -->
+					<ul> <!-- me permet de creer une liste pour bien organisé les elements-->
+						<li><strong>Juillet 2025:</strong> Bac, mention assez bien</li>
+						<li><strong>Mars 2025:</strong>Certification Pix: niveau independent 2</li>
+						<li><strong>Juillet 2022:</strong> Brevet des collèges, mention bien </li>
+					</ul>
+				</div>
+
+				<!-- Parcours scolaire -->
+				<div class="exp">
+					<h2>Parcours scolaire:</h2>
+					<ul>
+						<!-- Études supérieures et lycée -->
+						<li><strong>2025-2026:</strong> BTS CIEL première année (Providence-Amiens)</li>
+						<li><strong>2024-2025:</strong> Terminal générale Michelis - Amiens</li>
+						<li><strong>2023-2024:</strong> Première générale la Hotoie – Amiens</li>
+						<li><strong>2022-2023:</strong> Seconde générale la Hotoie – Amiens</li>
+						<li><strong>2021-2022:</strong> Collège Edouard Lucas - Amiens</li>
+						<li><strong>2017-2021:</strong> Collège St Martin - Amiens</li>
+					</ul>
+				</div>
+
+				<!-- Expériences professionnelles -->
+				<div class="exp">
+					<h2>Work Placements:</h2>
+					<ul>
+						<li><strong>Aout 2025:</strong>Agent de Logistique (CHU Amiens)</li>
+						<li><strong>Decembre 2021:</strong> Stage de découverte Boulangerie Faubourg de Hem-6 route
+							d’Abbeville 80 000 Amiens</li>
+						<li><strong>Fevrier 2021:</strong> Stage de découverte Boucherie Faubourg de Hem-6 route
+							d’Abbeville 80 000 Amiens</li>
+					</ul>
+				</div>
+			</div>
+			<div class="return" >
+			<a href="../Page404/index.html">
+				<button type="submit">Page 404  </button>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

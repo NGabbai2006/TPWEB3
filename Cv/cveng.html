@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Titre de la page -->
+	<title>CV</title>
+	<!-- Lien vers le CSS -->
+	<link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+	<div id="cv"> <!-- l'id cv me permet apres de gère cette div en css-->
+		<div id="photo"><!--meme chose mais pour la div photo-->
+			<img id="photo-img" src="Capture d’écran 2025-09-29 114730.png" alt="Photo" /><!--importe une image -->
+		</div>
+
+		<div id="info-list">
+			<!-- Info: date de naissance, adresse, téléphone, email, permis -->
+			<div class="info"><!-- me permet de gérer tout les div qui ont la class info-->
+				<span class="text">21/12/2006</span><!-- plus pratique que le <p> car il prend que l'espece dont il a besoin pour le texte-->
+			</div>
+			<div class="info">
+				<span class="text">34 Rue de Saveuse 80000 Amiens</span> 
+			</div>
+			<div class="info">
+				<span class="text">07.69.59.67.21</span>
+			</div>
+			<div class="info">
+				<span class="text">gabbai.noah@gmail.com</span>
+			</div>
+			<div class="info">
+				<span class="text">Category B driving licence Owns a car</span>
+			</div>
+
+			<!-- Info: loisirs, voyages, qualités, compétences -->
+			<div class="info">
+				<div>
+					<strong>Loisirs :</strong>
+					<div>Sport : Badminton<p>Reading : Manga, webtoon</p>Cook</div> <!-- <br> permet de saute de ligne dans ce cas la
+					juste pour utiliser pour l'esthetique -->
+				</div>
+			</div>
+			<div class="info">
+				<div>
+					<strong>Trip abroad :</strong><!-- permet de mettre le text en gras -->
+					<div>Germany, Austria</div>
+				</div>
+			</div>
+			<div class="info">
+				<div>
+					<strong>Qualities :</strong><!-- permet de mettre le text en gras -->
+					<div>Persevering, Calm, Patient, Hardworking</div>
+				</div>
+			</div>
+			<div class="info">
+				<div>
+					<strong>Skills :</strong> <!-- permet de mettre le text en gras -->
+					<div> intermediate level in HTML, CSS and Python<p>English and Germany</p></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Section principale du CV -->
+		<div id="main"> <!-- l'id main me permet apres de gèrerr cette div en css-->
+			<div class="langage" >
+			<a href="cvfr.html">
+				<button>
+					<img class="drapeau" src="france.png" alt="English Version" height="80px", width="100px"/>
+				</button>
+				</a>
+			</div>
+			<header>
+				<!-- Nom du candidat -->
+				<h1 id="name">Noah Gabbai</h1>
+			</header>
+
+			<div id="content">
+				<!-- Diplômes et certifications -->
+				<div class="exp">
+					<h2>Certificate :</h2> <!-- permet de faire un titre -->
+					<ul> <!-- me permet de creer une liste pour bien organisé les elements-->
+						<li><strong>Juillet 2025:</strong> A-level with honor</li>
+						<li><strong>March 2025:</strong> Pix Certification: independent level 2</li>
+						<li><strong>Juillet 2022:</strong> CCSE </li>
+					</ul>
+				</div>
+
+				<!-- Parcours scolaire -->
+				<div class="exp">
+					<h2>Education:</h2>
+					<ul>
+						<!-- Études supérieures et lycée -->
+						<li><strong>2025-2026:</strong> Two years degree in Cybersecurity, Computing and Networks,
+							Electronics (Providence-Amiens)</li>
+						<li><strong>2024-2025:</strong> Terminal générale Michelis - Amiens</li>
+						<li><strong>2023-2024:</strong> 11th Grade of high school la Hotoie – Amiens</li>
+						<li><strong>2022-2023:</strong> 10th Grade of high school la Hotoie – Amiens</li>
+						<li><strong>2021-2022:</strong> middle school Edouard Lucas - Amiens</li>
+						<li><strong>2017-2021:</strong> middle school St Martin - Amiens</li>
+					</ul>
+				</div>
+
+				<!-- Expériences professionnelles -->
+				<div class="exp">
+					<h2>Work Placements:</h2>
+					<ul>
+						<li><strong>August 2025:</strong> Summer Job Hospital Logistics (CHU Amiens)</li>
+						<li><strong>December 2021:</strong> Internship in bakery Faubourg de Hem</li>
+						<li><strong>February 2021:</strong> Internship in butchery Faubourg de Hem</li>
+					</ul>
+				</div>
+			</div>
+			<div class="return" >
+			<a href="../Page404/index.html">
+				<button type="submit">Page 404  </button>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
