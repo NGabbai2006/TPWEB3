@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background: #0d0d0d;
+  color: #00ffcc;
+  display: flex; /* permet d'aligner et organiser automatiquement les éléments enfants (se trouve dans le body)*/
+  flex-direction: column; /* aligne les elements verticalement, du haut vers le bas*/
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /*permet de prendre tout la largeur de n'importe quel écran*/
+}
+
+header {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+
+.glitch {
+  font-size: 50px;
+  position: relative;
+}
+.glitch::before, /*me permet d'avoir un effet glitch*/
+.glitch::after {
+  font-size: 50px;
+  position: absolute;
+  content: "404 – La Page Perdue";  /*ajoute du text*/
+  left: 0px;
+  width: 100%;
+  color: #ff00cc;
+  animation: glitched 1s infinite; /*permet de faire en sorte que le keyframes glitched soit l'animation s'applique au text dans la class glitch*/
+}
+
+.glitch::after { /*permet de faire en sorte d'avoir une copie du text mais en blue*/
+  color: #00ffff;
+  left: 3px; /*décale le text pour faire un meilleur effet*/
+  animation-delay:0.5s ;
+}
+
+@keyframes glitched {
+  0% { transform: translate(0, 0); opacity: 1; } /* point de départ de l'animation text totalement normale */
+  20% { transform: translate(-2px, 2px); opacity: 0.8; } /* déplace le text de 2px vers la gauche et 2px vers le bas et un peu moins visible*/
+  40% { transform: translate(2px, -2px); opacity: 0.6; } /* ensuite de suite*/
+  60% { transform: translate(-1px, 1px); opacity: 0.8; } 
+  80% { transform: translate(1px, -1px); opacity: 0.9; }
+  100% { transform: translate(0, 0); opacity: 1; } /* redevient normal */
+}
+
+#intro {
+  font-size: 20px;
+}
+
+.login {
+  text-align: center;
+}
+
+input, button {
+  padding: 10px;
+  margin: 2px;
+  background: #1a1a1a;
+  border: 1px solid #00ffcc;
+  color: #00ffcc;
+}
