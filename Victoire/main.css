@@ -1,0 +1,54 @@
+body {
+  background-color: #0d0d0d;
+  color: #00ffcc;
+  font-family: 'Courier New', monospace;
+  text-align: center; /* centre le texte */
+  padding: 40px; /* met l'espace autour du contenu */
+}
+
+#titre {
+  font-size: 48px; /* taille du texte */
+  margin-bottom: 20px; /* espace en dessous du texte */
+  animation: effet 3s infinite;
+  /* gère le temps que l'effet dure avant de recommencer */
+}
+
+@keyframes effet {
+  0% { opacity: 1; }  /* point de départ de l'animation */
+  50% { opacity: 0.5; } /* milieu de l'animation */
+  100% { opacity: 1; }  /* fin de l'animation */
+}
+
+.message {
+  font-size: 24px; 
+  margin-top: 20px; /* espace au dessus du texte */
+}
+
+.gif {
+  position: relative; /* permet de positionner les images */
+  margin: auto; /* centre les images */
+  margin-top: 30px;
+  max-width: 800px; /* largeur maximale de la zone des gifs */
+}
+
+.Gifimg {
+  width: 250px; /* largeur des images */
+  height: 250px; /* hauteur des images */
+  border: 2px solid #00ffcc; /* bordure des images */
+  border-radius: 12px; /* arrondit les coins des images */
+}
+
+.retour {
+  margin-top: 40px; /*met un espace pour aerer le texte*/
+  float: left; /* place le lien à gauche */
+}
+
+.cv {
+  margin-top: 40px;
+  float: right; /* place le lien à droite */
+}
+
+.color {
+  color: #00ffcc; /* couleur du lien */
+  font-size: 19px; /* taille du texte du lien */
+}

@@ -5,7 +5,7 @@ function verifier() {
   if (reponse === "ma premiere page web") { // verifie si la reponse est correcte
     renvoie.innerHTML = "<p>> Mot-clé correct. Accès a ta page web retrouvé.</p>";
     setTimeout(() => { // att 2s avant d'aller sur la pageweb suivante
-      window.location.href = "../Classement/page6.html"; // redirige vers l'avant denière page'
+      window.location.href = "../Victoire/page6.html"; // redirige vers l'avant denière page'
     }, 2000); 
   } else {
     renvoie.innerHTML = "<p>> Mot-clé incorrect..</p>"; // message d'erreur si reponse  mauvaise
