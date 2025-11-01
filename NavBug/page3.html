@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Le Navigateur Buggé</title>
+    <script> alert("Attention !!! Cette page peu etre dangereux pour les personnes épileptique") </script> <!-- avant que le site charge 
+    previent avec un petit pop l'utlisateur-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css"> 
+    <script src="script.js"></script> <!-- lie le fichier javascript au code html-->
+</head>
+
+<body>
+    <p class="secret">2</p> <!-- element caché pour le code a trouvé-->
+    <div id="terminal">
+        <p class="posi"> Bienvenue dans le Navigateur buggé...</p> <!-- la class posi me permetera de manipuler le text avec le css-->
+        <p class="posi"> L’interface instable. Trouve sortie!!!!</p> 
+        <p class="posi"> Indice : Le language est la voie </p>
+        <div class="glitch"><span>ERREUR</span> <span>404</span> <p class="secret">99</p>  <!--div pour faire le gros code erreur 404-->
+        </div>
+        <p class="secret">1</p>
+        <div class="bloc">
+            <p>> fuite possible:</p>
+            <p>> Veuillez entrer le mot-clé :</p>
+            <input type="text" id="reponse" />
+            <button onclick="verifier()">Valider</button> <!--bouton qui appele la fonc verifier du fichier js-->
+        </div>
+        <div id="terminal2"></div> <!--zone pour le text du js-->
+
+    </div>
+
+
+</body>
+
+</html>
