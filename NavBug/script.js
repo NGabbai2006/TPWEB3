@@ -8,7 +8,7 @@ function verifier() {
     terminal.innerHTML += "<p>Mot-clé correct! fuite possible!</p>"; // affiche le message dnas la div terminal et le <p> permet de faire un saut de ligne
     // le innerHTML permet d'ajouter  ou modif le contenu html pour ce code c'est dans une div
       setTimeout(() => { // att 2s avant d'aller sur la pageweb suivante
-      window.location.href = "../page4/page4.html";
+      window.location.href = "../LeBinaire/page4.html";
     }, 2000); 
   } else { 
     terminal.innerHTML += "<p>Mot-clé incorrect. le site ne tiendera plus longtemps</p>";

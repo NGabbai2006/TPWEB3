@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- pour que la page soit responsive -->
+  <title>Le Terminal</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div id="terminal"> 
+    <h1>> Le Terminal </h1>
+    <p>Vous avez réussi a fuire mais pour continuer votre chemin vous devrez réussi cette épreuve</p>
+    <p>> Décryptez la séquence :</p>
+    <p>> 01000001 01010011 01000011 01001001 01001001</p> <!-- c'est la sequence binaire pour ecrire ASCII-->
+
+    <div class="zone"> <!--div pour gerer l'input et le bouton-->
+      <p>> Entrez le décriptage:</p>
+      <input type="text" id="reponse" />
+      <button onclick="verifier()">Valider</button> <!--bouton qui appele la fonc verifier du fichier js-->
+    </div>
+    <div id="renvoie"></div><!--zone pour le text du js-->
+  </div>
+  <div id="terminal2">
+    <video width="100%" height="100%" autoplay muted loop> <!-- permet de mettre une video et regler sa taille et j'ai rajouter le faite qu'elle se lit tout seul et sens sons -->
+      <source src="terminal_code.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la balise vidéo.
+    </video>
+
+
+  </div>
+</body>
+
+</html>

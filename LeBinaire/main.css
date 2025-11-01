@@ -1,0 +1,43 @@
+body {
+  background-color: black; /* couleur de fond noir */
+  color: lime;
+  font-family: monospace; /* police d'ecriture */
+  margin: 0; /* supprime les marges par defaut ce qui permet d'eviter les bordures blanches*/
+  padding: 20px; /* espace entre le bord de la fenetre et du contenu */
+}
+
+#terminal {
+  max-width: 800px; /* largeur maximale du terminal pour eviter qu'il soit trop long*/
+  margin: auto; /* centre le terminal */
+  padding: 20px; 
+  border: 2px solid lime; /* bordure de couleur lime */
+  background-color: #111;
+
+}
+
+.zone {
+  margin-top: 20px; /* espace au dessus de la div zone*/
+}
+
+#terminal2 { /* meme parametre que le terminal sauf pour le fond  */
+  max-width: 800px; 
+  margin: auto;
+  padding: 20px;
+  border: 2px solid lime;
+  background-color: #000000; /* fond noir pour etre raccord avec la video*/
+
+} 
+
+button { /*style du bouton,  couleur taille bordure...*/
+  background-color: black;
+  color: lime;
+  border: 1px solid lime;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+button:hover { /* style du bouton et de la souris quant la souris est dessus*/
+  background-color: lime;
+  color: black;
+  cursor: pointer;
+}
