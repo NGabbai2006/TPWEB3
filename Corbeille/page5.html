@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- pour que la page soit responsive -->
+  <title>La Corbeille</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script> <!-- lie le fichier javascript au code html -->
+</head>
+<body>
+  <div id="corbeille"> 
+    <h2>> La Corbeille</h2> <!-- h2 pour le titre de la page-->
+    <p>> Bien joué tu es presque arrivé. C'est la dernière étape</p> 
+    <p> A toi de jouer</p>
+    <p>> Fichiers supprimés détectés :</p>
+    <ul id="color"> <!-- ul permet de faire une liste-->
+        <p><strong class="taille">memo1: ></strong> texte retrouvé : 'Je suis son premier...'"</p> <!-- strong permet de mettre
+         le text en gras et et la class taille me permet de modifier la taille de memo dans strong sans modifier la taille prévu dans l'id color-->
+        <p><strong class="taille">memo2: ></strong> texte retrouvé : '... une tache dur...'"</p>
+        <p><strong class="taille">memo3: ></strong> texte retrouvé : '...qui m'a pris du temps.'"</p>
+        <p><strong class="taille">memo4: ></strong> texte retrouvé : '...et un titre je suis.'"</p>
+    </ul>
+    <div >
+      <p>> Entrez le mot-clé:</p>
+      <input type="text" id="reponse" /> <!-- zone de texte pour que l'utilisateur puisse mettre sa reponse-->
+      <button onclick="verifier()">Valider</button> <!--bouton qui appele la fonc verifier du fichier js-->
+      <div id="renvoie"></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+  color: #ffffff; /* couleur du text gris clair pour contraster avec le fond noir*/
+  font-family: monospace;
+  margin: 0; /* supprime les marges par défaut du body */
+  padding: 20px; /* espace entre le bord de la fenetre et le contenu */
+  font-size: 15px; 
+}
+
+#corbeille { /* para du fond de la bordure de la taille te du placement*/
+  background: #111;
+  border: 2px solid red;
+  padding: 20px; /* espace entre le text et la bordure */
+  max-width: 700px; /* largeur max de la div pour pas qu'ele soit trop grande */
+  margin: auto;
+}
+
+#color { /* id pour changer la couleur des elements de la liste */
+  color: #ff0000;
+  font-size: 14px;
+}
+
+.taille { /* class pour modifier la taille de memo */
+    font-size: 16px;
+    margin-bottom: 10px; /* espace entre chaque ligne */
+}
+
+
+button { /*style du bouton,  couleur taille bordure...*/
+  background-color: black;
+  color: rgb(255, 0, 0);
+  border: 1px solid rgb(255, 0, 0);
+  font-family: monospace;
+  padding: 5px;
+  margin-top: 10px;
+}

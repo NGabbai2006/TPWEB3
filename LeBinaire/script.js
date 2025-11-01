@@ -6,7 +6,7 @@ function verifier() {
     renvoie.innerHTML = "> décryptage réussi !! Accès autorisé.";// affiche le message dnas la div renvoie 
     // le innerHTML permet d'ajouter  ou modif le contenu html pour ce code c'est dans une div
     setTimeout(() => { // att 2s avant d'aller sur la pageweb suivante
-      window.location.href = "../suivant/page5.html";
+      window.location.href = "../Corbeille/page5.html";
     }, 2000);
   } else {
     renvoie.innerHTML = "> Erreur de décryptage. Recommencez.;"; // message d'erreur si la reponse est mauvaise
