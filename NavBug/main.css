@@ -85,6 +85,9 @@ button:hover { /*il permet de selection le bouton et hover si la souris survole 
   cursor: pointer;  /*change le curseur en pointeur*/
 }
 
+/* je n'ai pas trouvé de solution pour faire en sorte que le text du js soit plus visible.*/
+
+
 
 @keyframes erreur{
   0% { opacity: 1; } /* point de départ de l'animation text  normal */
