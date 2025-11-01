@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Les backstages</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script> <!-- lie le fichier javascript au code html-->
+</head>
+
+<body>
+  <h1>Les backstages</h1>
+  <p>
+    Tu viens d'acceder à une zone protégée du système. Aucun fichier est visible. Aucun utilisateur actif. Pourtant...
+    quelque chose fonctionne ici.
+  </p>
+  <div class="bloc"> <!--ajout d'une div qui va permetra de faire refaire les meme divs plusieurs fois-->
+    <h2> Signal détecté</h2>
+    <p>
+      Un signal faible est capter depuis un serveur inconnu. Il semble transmettre des données cryptées à plusieurs intervalles.
+    </p>
+    <p><strong>Dernier message reçu :</strong> <em>"S......"</em></p> <!--met le text en gras et en italique-->
+  </div>
+  <div class="bloc"> 
+    <h2> Analyse</h2>
+    <p>
+      Le système observe. Chaque clic, tout est enregistré. Tu n'es pas seul ici.
+    </p>
+    <ul> <!--me permet de faire une liste-->
+      <li>Activité détectée : 1 utilisateur</li> 
+      <li>Connexion : instable</li>
+      <li>Protocole de sécurité : désactivé</li>
+    </ul>
+  </div>
+
+  <div class="bloc">
+    <h2> Accès restreint</h2>
+    <p>
+      Pour continuer, tu devras prouver que tu comprends ce que signifie être invisible... et pourtant essentiel.
+    </p>
+    <p><strong>Indice :</strong> C'est lui qui te permet de voir cette page.</p>
+    <p>> Connexion établie...</p>
+    <p>> Veuillez entrer le mot-clé :</p>
+    <input type="text" id="reponse"/>
+    <button onclick="verifier()">Valider</button> <!--bouton qui appele la fonc verifier du fichier js-->
+  </div>
+  <div id="terminal"></div> <!--zone pour le text du js-->
+</body>
+
+</html>
