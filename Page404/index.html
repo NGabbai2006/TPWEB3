@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- pour que la page soit responsive -->
   <title>404 – La Page Perdue</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header>
     <h1 class="glitch"> ​ </h1> <!-- j'ai mis un caractère invisble qui permet pour le css d'utiliser la 
@@ -13,18 +15,17 @@
     <p id="intro">Tu as été aspiré dans le code... Trouve la page d’accueil avant qu’elle ne s’efface.</p>
   </header>
 
-    <div class="login">
-      <form id="startGame" action="../LesBackstages/page2.html" method="get"><!-- ../ permet de remonter d'un dossier et de faire en sorte quant 
+  <div class="login">
+    <form id="startGame" action="../LesBackstages/page2.html" method="get"><!-- ../ permet de remonter d'un dossier et de faire en sorte quant 
         l'utilisateur click sur le bouton soit rediriger sur la page2 -->
-        <label for="pseudo">Entre ton pseudo :</label>
-        <input type="text" id="pseudo" name="pseudo" required /> <!--pour plus tard recuperer le pseudo de l'utilisateur-->
-        <button type="submit">Commencer</button> <!-- permet de creer un bouton -->
-      
-      </form>
-    </div>
+      <button type="submit">Commencer</button> <!-- permet de creer un bouton -->
+
+    </form>
+  </div>
 
   <footer>
     <p>&copy; 2025 Noah Dev – Escape Game Web</p> <!--  le &copy permet d'afficher le symbole © -->
   </footer>
 </body>
+
 </html>
