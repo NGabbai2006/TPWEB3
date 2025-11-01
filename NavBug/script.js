@@ -15,7 +15,7 @@ function verifier() {
     nbr++;
     if (nbr >= 3) { // si l'utilisateur se trompe 3 fois il est redirigé vers la page 404
       setTimeout(() => {
-        window.location.href = "../Page404/index.html";
+        window.location.href = "../Acceuil/accueil.html">; // redirection vers la page d'accueil
       }, 2000);
     }
 
