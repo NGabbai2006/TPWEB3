@@ -3,7 +3,7 @@
 		font-size: 18px;
 		/* met ici pour que sa soit la meme taille de texte pour tout les div */
 		margin: 0;
-		padding: 0; 
+		padding: 0;
 		height: 100vh;
 		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	}
@@ -21,9 +21,12 @@
 	#photo {
 		width: 30%;
 		float: left;
-		margin-left: 20px; /* permet de faire un petit espace pour eviter qu'il soit coller a gauche de la page*/
-		margin-bottom: 36px; /* permet que le prochain element en dessous et un espace*/
-		margin-top: 20px; /* evite que la photo soit tout en haut de la page mais un peu plus bas  */
+		margin-left: 20px;
+		/* permet de faire un petit espace pour eviter qu'il soit coller a gauche de la page*/
+		margin-bottom: 36px;
+		/* permet que le prochain element en dessous et un espace*/
+		margin-top: 20px;
+		/* evite que la photo soit tout en haut de la page mais un peu plus bas  */
 	}
 
 	/* taille de la photo*/
@@ -36,7 +39,8 @@
 	#info-list {
 		width: 30%;
 		float: left;
-		clear: left; /* permet de gèrer si il doit l'element en dessous du float ou pas */
+		clear: left;
+		/* permet de gèrer si il doit l'element en dessous du float ou pas */
 		margin-left: 0px;
 	}
 
@@ -44,7 +48,8 @@
 	.info {
 		box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 		font-size: 18px;
-		padding: 10px 14px; /* gère l'espace au tour de l'element */
+		padding: 10px 14px;
+		/* gère l'espace au tour de l'element */
 		margin-bottom: 40px;
 	}
 
@@ -66,7 +71,7 @@
 	/* parametre pour afficher mon prenom */
 	#name {
 		text-align: center;
-		padding: 15vw 0 12px;
+		padding: 40px 0 12px;
 		font-size: 48px;
 		margin: 0;
 		color: #000000;
@@ -87,15 +92,23 @@
 		margin-bottom: 80px;
 		background: rgba(223, 222, 222, 0.3);
 	}
+
 	.return {
 		position: absolute;
 		bottom: 20px;
 		right: 20px;
-		
+
 	}
+
 	button {
-    border: none;
-}
+		border: none; /* enlève la bordure par défaut du bouton */
+	}
+
+	button:hover { /*il permet de selection le bouton et hover si la souris survole le bouton grace a ceci je peux savoir que je click sur un bouton*/
+		background-color: #3278ff;
+		color: white;
+		cursor: pointer;
+	}
 
 	/* Responsive pour les écrans ≤ 768px du style mobile */
 	/* meme code css que celui pour pc mais juste modifier sur quelque endroit pour l'adapter correctement au format smartphone */
@@ -159,22 +172,25 @@
 			width: 100%;
 			position: relative;
 		}
-		.exp {
-		background: rgba(223, 222, 222, 0.25);
-	}
-	.drapeau {
-		width: 60px;
-		height: 40px;
-	}
-	 .return {
-        position: relative;
-        margin: 20px 0 0 20px;
-        text-align: right;
-    }
 
-    .langage {
-        position: relative;
-        margin: 20px 0 0 20px;
-        text-align: right;
-    }
+		.exp {
+			background: rgba(223, 222, 222, 0.25);
+		}
+
+		.drapeau {
+			width: 60px;
+			height: 40px;
+		}
+
+		.return {
+			position: relative;
+			margin: 20px 0 0 20px;
+			text-align: right;
+		}
+
+		.langage {
+			position: relative;
+			margin: 20px 0 0 20px;
+			text-align: right;
+		}
 	}
