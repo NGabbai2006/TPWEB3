@@ -1,197 +1,119 @@
-	/* paramètre de la page */
-	body {
-		font-size: 18px;
-		/* met ici pour que sa soit la meme taille de texte pour tout les div */
-		margin: 0;
-		padding: 0;
-		height: 100vh;
-		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #0d0d0d;
+  color: #00ffcc;
+}
 
-	/* div principale qui permet de paramétrer la taille du site  */
-	#cv {
-		width: 100%;
-		height: 100%;
-		position: relative;
-		background: rgb(50, 156, 255);
+.langue { /*paramètre pour mettre le drapeau en haut a droite*/
+  position: absolute; 
+  top: 10px;
+  right: 10px;
+}
 
-	}
+.drapeau { /* taille du drapeau + curseur qui change quand la souris est dessus*/
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
 
-	/* taile de la div et position pour la photo*/
-	#photo {
-		width: 30%;
-		float: left;
-		margin-left: 20px;
-		/* permet de faire un petit espace pour eviter qu'il soit coller a gauche de la page*/
-		margin-bottom: 36px;
-		/* permet que le prochain element en dessous et un espace*/
-		margin-top: 20px;
-		/* evite que la photo soit tout en haut de la page mais un peu plus bas  */
-	}
+.titre {
+  text-align: center; /* met le text au mileu de la page*/
+  font-size: 48px; /*taille*/
+  margin-top: 40px; /*permet de faire un espace entre le haut de la page et le titre*/
+  color: #00ffcc;
+}
 
-	/* taille de la photo*/
-	#photo-img {
-		width: 150px;
-		height: 175px;
-	}
+.sous-titre {
+  text-align: center;
+  font-size: 19px;
+  margin-bottom: 40px;
+  color: #cccccc;
+}
 
-	/* div qui gère les petits divs et aussi la largeur pour eviter de casser tout la page*/
-	#info-list {
-		width: 30%;
-		float: left;
-		clear: left;
-		/* permet de gèrer si il doit l'element en dessous du float ou pas */
-		margin-left: 0px;
-		background: rgb(50, 156, 255);
-	}
+/* Disposition principale */
+.principale {
+  display: flex; 
+  padding: 0 5% 0 5%; /* fait un espace entre les bordures droites et gauches*/
+}
 
-	/* fait un contour sur les div dans la marge et les espaces entre les divs*/
-	.info {
-		box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-		font-size: 18px;
-		padding: 10px 14px;
-		/* gère l'espace au tour de l'element */
-		margin-bottom: 40px;
-	}
+/* Colonne gauche */
+.marge {
+  width: 35%;
+  padding-right: 2%;
+}
 
+/* Colonne droite */
+.contenue {
+  width: 60%;
+  padding-left: 2vh;
+}
 
-	#main {
-		width: 70%;
-		height: 100%;
-		background: #ffffff;
-		margin-left: 30%;
-	}
+.bloc { /* permet de paramétrer la zone de text*/
+  padding: 10px; /* fait en sorte que les bordures du soit pas coller au texte*/
+  font-size: 18px;
+  margin-bottom: 30px; /* fait un espace entre chaque text*/
+  color: #00ffcc;
+  box-shadow: 0 0 15px #00ffcc; /*fait un effet d'ombre*/
+  border-radius: 8px; /*fait les bords arrondis*/
+}
 
-	.langage {
-		position: absolute;
-		top: 20px;
-		right: 20px;
+.liste {
+  padding-left: 15px; /*permet de faire en sorte d'aligner le text*/
+}
 
-	}
+.info {
+  margin-bottom: 8px; /*agrandit le zone de text*/
+  color: #ffffff;
+}
 
-	/* parametre pour afficher mon prenom */
-	#name {
-		text-align: center;
-		padding: 40px 0 12px;
-		font-size: 48px;
-		margin: 0;
-		color: #000000;
-	}
-
-	/* permet possitionner la div et de faire en sorte que les div exp soivent plus simple a placer  */
-	#content {
-		width: 100%;
-		margin-top: 12px;
-		position: relative;
-		height: 80%;
-	}
-
-	/* permet de faire un fond pour les div work placement , education.... */
-	.exp {
-
-		padding: 14px 18px;
-		margin-bottom: 80px;
-		background: rgba(223, 222, 222, 0.3);
-	}
-
-	.return {
-		position: fixed; /* permet que le bouton ne bouge pas et suis la page si on monte ou descends*/
-		right: 20px; /* le met sur la droite*/
-		bottom: 20px; /*empeche qu'il sorte de la page*/
-		z-index: 1000; /* permet qu'il soit afficher au dessus de d'autre contenue*/
-	}
-
-	button {
-		border: none; /* enlève la bordure par défaut du bouton */
-	}
-
-	button:hover { /*il permet de selection le bouton et hover si la souris survole le bouton grace a ceci je peux savoir que je click sur un bouton*/
-		background-color: #3278ff;
-		color: white;
-		cursor: pointer;
-	}
-
-	/* Responsive pour les écrans ≤ 768px du style mobile */
-	/* meme code css que celui pour pc mais juste modifier sur quelque endroit pour l'adapter correctement au format smartphone */
-	@media screen and (max-width: 968px) {
-		body {
-			font-size: 13px;
-			margin: 0;
-			padding: 0;
-			height: 100%;
-			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-		}
-
-		#cv {
-			width: 100%;
-			height: 100%;
-			position: relative;
-			background: rgb(50, 156, 255);
-
-		}
-
-		#photo {
-			width: 30%;
-			float: left;
-			margin-left: 20px;
-			margin-bottom: 55px;
-			margin-top: 20px;
-		}
-
-		#photo-img {
-			width: 70%;
-			height: 50%;
-		}
-
-		#info-list {
-			width: 40%;
-			height: 100%;
-			margin-left: 0px;
-		}
-
-		.info {
-			box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-			font-size: 13px;
-			margin-bottom: 33px;
-		}
+/* Bouton */
+button {
+  background-color: #0d0d0d; /* couleur du fond du bouton*/
+  border: 2px solid #00ffcc; /*bordure*/
+  border-radius: 8px;
+  color: #00ffcc;
+  padding: 10px 20px; /*agrandit la taille du bouton*/
+  font-size: 20px; /* taille du text*/
+  cursor: pointer;
+  margin: 30px auto;
+  display: block; /* occupe tout la largeur et le met au milieu*/
+}
 
 
-		#main {
+@media screen and (max-width: 768px) { /* meme code mais modifier pour qu'il fonctione sur tel*/
+  .principale {
+    flex-direction: column; /* aligne les éléments en colonne*/
+    padding: 0 5%;
+  }
 
-			width: 60%;
-			height: 100%;
-			margin-left: 40%;
-		}
+  .marge,
+  .contenue {
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
 
-		#name {
-			text-align: center;
-			font-size: 48px;
-			color: #000000;
-		}
+  .langue {
+    position: static;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-		#content {
-			width: 100%;
-			position: relative;
-		}
+  .drapeau {
+    width: 40px;
+  }
 
-		.exp {
-			background: rgba(223, 222, 222, 0.25);
-		}
+  .titre {
+    font-size: 35px;
+  }
 
-		.drapeau {
-			width: 60px;
-			height: 40px;
-		}
+  .sous-titre {
+    font-size: 16px;
+  }
 
-		.return {
-			position: relative;
-			margin: 20px 0 0 20px;
-			text-align: right;
-		}
-
-		.langage {
-			position: relative;
-			margin: 20px 0 0 20px;
-			text-align: right;
-		}
-	}
+  button {
+    width: 100%;
+  }
+}

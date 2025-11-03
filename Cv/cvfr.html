@@ -1,127 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-	<meta charset="utf-8" />
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!-- Titre de la page -->
 	<title>CV</title>
-	<!-- Lien vers le CSS -->
 	<link rel="stylesheet" href="main.css" />
 </head>
 
 <body>
-	<div id="cv"> <!-- l'id cv me permet apres de gère cette div en css-->
-		<div id="photo"><!--meme chose mais pour la div photo-->
-			<img id="photo-img" src="Capture d’écran 2025-09-29 114730.png" alt="Photo" /><!--importe une image -->
-		</div>
-
-		<div id="info-list">
-			<!-- Info: date de naissance, adresse, téléphone, email, permis -->
-			<div class="info"><!-- me permet de gérer tout les div qui ont la class info-->
-				<span
-					class="text">21/12/2006</span><!-- plus pratique que le <p> car il prend que l'espece dont il a besoin pour le texte-->
-			</div>
-			<div class="info">
-				<span class="text">ngabbai.pro@gmail.com</span>
-			</div>
-			<div class="info">
-				<span class="text">Titulaire du Permis B Possède un véhicule</span>
-			</div>
-
-			<!-- Info: loisirs, voyages, qualités, compétences -->
-			<div class="info">
-				<div>
-					<strong>Loisirs :</strong>
-					<div>Sport : Badminton<p>
-							Lecture : Manga, webtoon</p>
-						Cuisine
-					</div> <!-- j'utilise p au lieu de br car interdit par le prof -->
-				</div>
-			</div>
-			<div class="info">
-				<div>
-					<strong>Voyage a l'étranger :</strong><!-- permet de mettre le text en gras -->
-					<div>Allemagne, Autriche</div>
-				</div>
-			</div>
-			<div class="info">
-				<div>
-					<strong>Qualités :</strong><!-- permet de mettre le text en gras -->
-					<div>Persévérant, Réfléchi, Assidu</div>
-				</div>
-			</div>
-			<div class="info">
-				<div>
-					<strong>Compétences :</strong> <!-- permet de mettre le text en gras -->
-					<div>
-						Niveau interlédiaire en HTML, CSS et Python
-						<p>Anglais et Allemand</p>
-					</div>
-				</div>
-			</div>
-			<div class="return">
-				<a href="../index.html">
-					<button type="submit">Page 404 </button>
-				</a>
-			</div>
-		</div>
-
-		<!-- Section principale du CV -->
-		<div id="main"> <!-- l'id main me permet apres de gèrerr cette div en css-->
-			<div class="langage">
-				<a href="cveng.html">
-					<button>
-						<img class="drapeau" src="UK.png" alt="English Version" height="80px" , width="100px" />
-					</button>
-				</a>
-			</div>
-			<header>
-				<!-- Nom du candidat -->
-				<h1 id="name">Noah</h1>
-			</header>
-
-			<div id="content">
-				<!-- Diplômes et certifications -->
-				<div class="exp">
-					<h2>Diplômes :</h2> <!-- permet de faire un titre -->
-					<ul> <!-- me permet de creer une liste pour bien organisé les elements-->
-						<li><strong>Juillet 2025:</strong> Bac, mention assez bien</li>
-						<li><strong>Mars 2025:</strong>Certification Pix: niveau independent 2</li>
-						<li><strong>Juillet 2022:</strong> Brevet des collèges, mention bien </li>
-					</ul>
-				</div>
-
-				<!-- Parcours scolaire -->
-				<div class="exp">
-					<h2>Parcours scolaire:</h2>
-					<ul>
-						<!-- Études supérieures et lycée -->
-						<li><strong>2025-2026:</strong> BTS CIEL première année (Providence-Amiens)</li>
-						<li><strong>2024-2025:</strong> Terminal générale Michelis - Amiens</li>
-						<li><strong>2023-2024:</strong> Première générale la Hotoie – Amiens</li>
-						<li><strong>2022-2023:</strong> Seconde générale la Hotoie – Amiens</li>
-						<li><strong>2021-2022:</strong> Collège Edouard Lucas - Amiens</li>
-						<li><strong>2017-2021:</strong> Collège St Martin - Amiens</li>
-					</ul>
-				</div>
-
-				<!-- Expériences professionnelles -->
-				<div class="exp">
-					<h2>Expériences professionnelles:</h2>
-					<ul>
-						<li><strong>Aout 2025:</strong>Agent de Logistique (CHU Amiens)</li>
-						<li><strong>Decembre 2021:</strong> Stage de découverte Boulangerie Faubourg de Hem-6 route
-							d’Abbeville 80 000 Amiens</li>
-						<li><strong>Fevrier 2021:</strong> Stage de découverte Boucherie Faubourg de Hem-6 route
-							d’Abbeville 80 000 Amiens</li>
-					</ul>
-				</div>
-			</div>
-
-		</div>
+	<div class="langue"> <!-- permetra de gèrer la position du bouton -->
+		<a href="cveng.html">
+			<img class="drapeau" src="UK.png" alt="Version anglaise" />
+		</a>
 	</div>
 
-</body>
+	<h1 class="titre">Gabbai</h1> <!-- class pour parametre le titre-->
+	<p class="sous-titre">Développeur passionné | BTS CIEL</p>
+	<div class="principale"> <!-- permet de set la div principal pour gèrer tout les autres-->
+		<div class="marge">
+			<div class="bloc"><!-- cette div sera la meme pour tout car je veux le meme style partout-->
+				<h2>Info perso</h2>
+				<ul class="liste"> 
+					<li class="info">Date de naissance : 21/12/2006</li>
+					<li class="info">Email : ngabbai.pro@gmail.com</li>
+					<li class="info">Permis B - Véhicule personnel</li>
+				</ul>
+			</div>
+
+			<div class="bloc"> <!-- met div juste sur un autre sujet -->
+				<h2>Loisirs</h2>
+				<ul class="liste">
+					<li class="info">Badminton</li>
+					<li class="info">Lecture : Manga, Webtoon</li>
+					<li class="info">Cuisine</li>
+				</ul>
+			</div>
+
+			<div class="bloc"> <!-- met div juste sur un autre sujet -->
+				<h2>Voyages</h2>
+				<ul class="liste">
+					<li class="info">Allemagne</li>
+					<li class="info">Autriche</li>
+				</ul>
+			</div>
+
+			<div class="bloc"> <!-- met div juste sur un autre sujet -->
+				<h2>Qualités</h2>
+				<ul class="liste">
+					<li class="info">Persévérant</li>
+					<li class="info">Réfléchi</li>
+					<li class="info">Assidu</li>
+				</ul>
+			</div>
+
+			<div class="bloc"><!-- met div juste sur un autre sujet -->
+				<h2>Compétences</h2>
+				<ul class="liste">
+					<li class="info">HTML, CSS, Python (niveau intermédiaire)</li>
+					<li class="info">Anglais et Allemand</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="contenue"> <!-- cette div me permet de mettres des blocs contenue dedans dans un autre endroit soit la droite   -->
+			<div class="bloc">
+				<h2>Diplômes</h2>
+				<ul class="liste">
+					<li class="info">Juillet 2025 : Bac, mention assez bien</li>
+					<li class="info">Mars 2025 : Certification Pix niveau indépendant 2</li>
+					<li class="info">Juillet 2022 : Brevet, mention bien</li>
+				</ul>
+			</div>
+
+			<div class="bloc">
+				<h2>Parcours scolaire</h2>
+				<ul class="liste">
+					<li class="info">2025-2026 : BTS CIEL (Providence-Amiens)</li>
+					<li class="info">2024-2025 : Terminale générale Michelis - Amiens</li>
+					<li class="info">2023-2024 : Première générale La Hotoie – Amiens</li>
+					<li class="info">2022-2023 : Seconde générale La Hotoie – Amiens</li>
+					<li class="info">2021-2022 : Collège Edouard Lucas - Amiens</li>
+					<li class="info">2017-2021 : Collège St Martin - Amiens</li>
+				</ul>
+			</div>
+
+			<div class="bloc">
+				<h2>Expériences professionnelles</h2>
+				<ul class="liste">
+					<li class="info">Août 2025 : Agent de logistique (CHU Amiens)</li>
+					<li class="info">Décembre 2021 : Stage découverte - Boulangerie Faubourg de Hem</li>
+					<li class="info">Février 2021 : Stage découverte - Boucherie Faubourg de Hem</li>
+				</ul>
+			</div>
+		</div>
+	</div> 
+	<a href='../index.html'> <!--lien qui contient un bouton pour pouvoir donner une apparance plus jolie -->
+		<button>Page 404</button>
+
+	</a>
+	</body>
 
 </html>

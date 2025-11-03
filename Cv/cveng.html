@@ -1,126 +1,106 @@
-<!doctype html>
+
+<!--commentaire sur la page html cvfr.html car c'est le meme code just dans une langue différente -->
+
+
+<!DOCTYPE html> 
 <html>
 
 <head>
-	<meta charset="utf-8" />
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!-- Titre de la page -->
-	<title>CV</title>
-	<!-- Lien vers le CSS -->
+	<title>Resume - Terminal Style</title>
 	<link rel="stylesheet" href="main.css" />
 </head>
 
 <body>
-	<div id="cv"> <!-- l'id cv me permet apres de gère cette div en css-->
-		<div id="photo"><!--meme chose mais pour la div photo-->
-			<img id="photo-img" src="Capture d’écran 2025-09-29 114730.png" alt="Photo" /><!--importe une image -->
+	<div class="langue">
+		<a href="cvfr.html">
+			<img src="france.png" alt="French version" class="drapeau" />
+		</a>
+	</div>
+
+	<h1 class="titre">Gabbai</h1>
+	<p class="sous-titre">Passionate Developer | BTS CIEL</p>
+
+	<div class="principale">
+		<div class="marge">
+			<div class="bloc">
+				<h2>Personal Information</h2>
+				<ul class="liste">
+					<li class="info">Date of Birth: 21/12/2006</li>
+					<li class="info">Email: ngabbai.pro@gmail.com</li>
+					<li class="info">Driving License B - Owns a vehicle</li>
+				</ul>
+			</div>
+
+			<div class="bloc">
+				<h2>Hobbies</h2>
+				<ul class="liste">
+					<li class="info">Badminton</li>
+					<li class="info">Reading: Manga, Webtoon</li>
+					<li class="info">Cooking</li>
+				</ul>
+			</div>
+
+			<div class="bloc">
+				<h2>Travel</h2>
+				<ul class="liste">
+					<li class="info">Germany</li>
+					<li class="info">Austria</li>
+				</ul>
+			</div>
+
+			<div class="bloc">
+				<h2>Qualities</h2>
+				<ul class="liste">
+					<li class="info">Persevering</li>
+					<li class="info">Thoughtful</li>
+					<li class="info">Hardworking</li>
+				</ul>
+			</div>
+
+			<div class="bloc">
+				<h2>Skills</h2>
+				<ul class="liste">
+					<li class="info">HTML, CSS, Python (intermediate level)</li>
+					<li class="info">English and German</li>
+				</ul>
+			</div>
 		</div>
 
-		<div id="info-list">
-			<!-- Info: date de naissance, adresse, téléphone, email, permis -->
-			<div class="info"><!-- me permet de gérer tout les div qui ont la class info-->
-				<span
-					class="text">21/12/2006</span><!-- plus pratique que le <p> car il prend que l'espece dont il a besoin pour le texte-->
+		<div class="contenue">
+			<div class="bloc">
+				<h2>Degrees</h2>
+				<ul class="liste">
+					<li class="info">July 2025: High School Diploma, fairly good mention</li>
+					<li class="info">March 2025: Pix Certification, independent level 2</li>
+					<li class="info">July 2022: Middle School Certificate, good mention</li>
+				</ul>
 			</div>
 
-			<div class="info">
-				<span class="text">ngabbai.pro@gmail.com</span>
-			</div>
-			<div class="info">
-				<span class="text">Category B driving licence Owns a car</span>
-			</div>
-
-			<!-- Info: loisirs, voyages, qualités, compétences -->
-			<div class="info">
-				<div>
-					<strong>Loisirs :</strong>
-					<div>Sport : Badminton<p>
-							Reading : Manga, webtoon</p>
-						Cook
-					</div> <!-- j'utilise p au lieu de br car interdit par le prof -->
-				</div>
-			</div>
-			<div class="info">
-				<div>
-					<strong>Trip abroad :</strong><!-- permet de mettre le text en gras -->
-					<div>Germany, Austria</div>
-				</div>
-			</div>
-			<div class="info">
-				<div>
-					<strong>Qualities :</strong><!-- permet de mettre le text en gras -->
-					<div>Persevering, Calm, Patient, Hardworking</div>
-				</div>
-			</div>
-			<div class="info">
-				<div>
-					<strong>Skills :</strong> <!-- permet de mettre le text en gras -->
-					<div> intermediate level in HTML, CSS and Python
-						<p>English and Germany</p>
-					</div>
-				</div>
-			</div>
-			<div class="return">
-				<a href="../index.html">
-					<button type="submit">Page 404 </button>
-				</a>
-			</div>
-		</div>
-
-		<!-- Section principale du CV -->
-		<div id="main"> <!-- l'id main me permet apres de gèrerr cette div en css-->
-			<div class="langage">
-				<a href="cvfr.html">
-					<button>
-						<img class="drapeau" src="france.png" alt="English Version" height="80px" , width="100px" />
-					</button>
-				</a>
-			</div>
-			<header>
-				<!-- Nom du candidat -->
-				<h1 id="name">Noah </h1>
-			</header>
-
-			<div id="content">
-				<!-- Diplômes et certifications -->
-				<div class="exp">
-					<h2>Certificate :</h2> <!-- permet de faire un titre -->
-					<ul> <!-- me permet de creer une liste pour bien organisé les elements-->
-						<li><strong>Juillet 2025:</strong> A-level with honor</li>
-						<li><strong>March 2025:</strong> Pix Certification: independent level 2</li>
-						<li><strong>Juillet 2022:</strong> CCSE </li>
-					</ul>
-				</div>
-
-				<!-- Parcours scolaire -->
-				<div class="exp">
-					<h2>Education:</h2>
-					<ul>
-						<!-- Études supérieures et lycée -->
-						<li><strong>2025-2026:</strong> Two years degree in Cybersecurity, Computing and Networks,
-							Electronics (Providence-Amiens)</li>
-						<li><strong>2024-2025:</strong> Terminal générale Michelis - Amiens</li>
-						<li><strong>2023-2024:</strong> 11th Grade of high school la Hotoie – Amiens</li>
-						<li><strong>2022-2023:</strong> 10th Grade of high school la Hotoie – Amiens</li>
-						<li><strong>2021-2022:</strong> middle school Edouard Lucas - Amiens</li>
-						<li><strong>2017-2021:</strong> middle school St Martin - Amiens</li>
-					</ul>
-				</div>
-
-				<!-- Expériences professionnelles -->
-				<div class="exp">
-					<h2>Work Placements:</h2>
-					<ul>
-						<li><strong>August 2025:</strong> Summer Job Hospital Logistics (CHU Amiens)</li>
-						<li><strong>December 2021:</strong> Internship in bakery Faubourg de Hem</li>
-						<li><strong>February 2021:</strong> Internship in butchery Faubourg de Hem</li>
-					</ul>
-				</div>
+			<div class="bloc">
+				<h2>Education</h2>
+				<ul class="liste">
+					<li class="info">2025-2026: BTS CIEL (Providence-Amiens)</li>
+					<li class="info">2024-2025: Senior Year - Michelis, Amiens</li>
+					<li class="info">2023-2024: Junior Year - La Hotoie, Amiens</li>
+					<li class="info">2022-2023: Sophomore Year - La Hotoie, Amiens</li>
+					<li class="info">2021-2022: Edouard Lucas Middle School - Amiens</li>
+					<li class="info">2017-2021: St Martin Middle School - Amiens</li>
+				</ul>
 			</div>
 
+			<div class="bloc">
+				<h2>Work Experience</h2>
+				<ul class="liste">
+					<li class="info">August 2025: Logistics Agent (CHU Amiens)</li>
+					<li class="info">December 2021: Discovery Internship - Bakery Faubourg de Hem</li>
+					<li class="info">February 2021: Discovery Internship - Butchery Faubourg de Hem</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
+	<button><a href='../index.html'>Page 404 </a></button>
 </body>
-
 </html>
