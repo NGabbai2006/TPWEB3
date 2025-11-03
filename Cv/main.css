@@ -95,10 +95,10 @@
 	}
 
 	.return {
-		position: absolute;
-		bottom: 20px;
-		right: 20px;
-
+		position: fixed; /* permet que le bouton ne bouge pas et suis la page si on monte ou descends*/
+		right: 20px; /* le met sur la droite*/
+		bottom: 20px; /*empeche qu'il sorte de la page*/
+		z-index: 1000; /* permet qu'il soit afficher au dessus de d'autre contenue*/
 	}
 
 	button {
