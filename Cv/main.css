@@ -42,6 +42,7 @@
 		clear: left;
 		/* permet de gèrer si il doit l'element en dessous du float ou pas */
 		margin-left: 0px;
+		background: rgb(50, 156, 255);
 	}
 
 	/* fait un contour sur les div dans la marge et les espaces entre les divs*/
