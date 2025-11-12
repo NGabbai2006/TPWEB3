@@ -46,6 +46,11 @@ header {
   80% { transform: translate(1px, -1px); opacity: 0.9; }
   100% { transform: translate(0, 0); opacity: 1; } /* redevient normal */
 }
+/*easter egg : lien qui donne les solutions*/
+#lien {
+  text-decoration: none;
+  
+}
 
 #intro {
   font-size: 20px;
